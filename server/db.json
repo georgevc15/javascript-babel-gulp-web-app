@@ -3,5 +3,21 @@
     { "id": 1, "title": "Nimeni nu se multumeste cu averea pe care o are, dar fiecare e multumit de inteligenta sa", "author": "Tolstoi" },
     { "id": 2, "title": "Este de o mie de ori mai bine sa fii optimist si sa te inseli, decat sa fii pesimist si sa ai dreptate", "author": "Jack Penn" },
     { "id": 3, "title": "Gloria nu este a celor neinvinsi, ci a celor care se ridica dupa fiecare lovitura", "author": "Proverb chinezesc" }
+  ],
+
+  "activeUsers": [
+  	{
+  		"name":"Sam",
+  		"avatar": "avatar.jpg"
+  	},
+  	{
+  		"name":"Tyler",
+  		"avatar": "avatar.jpg"
+  	},
+  	  	{
+  		"name":"Brook",
+  		"avatar": "avatar.jpg"
+  	}
+
   ]
 }
