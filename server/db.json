@@ -8,15 +8,15 @@
   "activeUsers": [
   	{
   		"name":"Sam",
-  		"avatar": "avatar.jpg"
+  		"avatar": "avatar.png"
   	},
   	{
   		"name":"Tyler",
-  		"avatar": "avatar.jpg"
+  		"avatar": "avatar.png"
   	},
   	  	{
   		"name":"Brook",
-  		"avatar": "avatar.jpg"
+  		"avatar": "avatar.png"
   	}
 
   ]

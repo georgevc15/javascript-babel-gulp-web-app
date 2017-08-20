@@ -3,7 +3,6 @@ import xss from "xss-filters";
 let ui = {
 	renderPosts(posts) {
 		//console.log( posts );
-		
 		let elements = posts.map( (post)  => {
 			let { title, author } = post;
 			return articleTemplate(title, author);
@@ -14,6 +13,7 @@ let ui = {
 	},
 
 	renderUsers(users) {
+		//console.log( users );
 		let elements = users.map( (user)  => {
 			let { name, avatar } = user;
 			return userTemplate(name, avatar);
@@ -24,12 +24,19 @@ let ui = {
 	}
 }
 
-let template = `<div class='active-avatar'>
-					<img width="54" src="assests/avatar.jpg" />
-					<h5 class="post-author">Sam</h5>
-				</div>`;
+function userTemplate(name, avatar) {
+	let safeName = xss.inHTMLData(name);
+	let safeAvatar = xss.inHTMLData(avatar);
+	
+	let template = `<div class='active-avatar'>
+						<img width="54" src="assests/images/${safeAvatar}" />
+						<h5 class="post-author">${safeName}</h5>
+					</div>`;
 
-function  articleTemplate(title, author) {
+		return template;			
+}
+
+function articleTemplate(title, author) {
 	let saveTitle = xss.inHTMLData(title);
 	let safeAuthor = xss.inHTMLData(author);
 
