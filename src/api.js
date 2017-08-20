@@ -1,3 +1,6 @@
+import { BASE_URI } from "./constants";
+
+
 let API = {
 	fetch(path) {
 
